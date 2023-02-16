@@ -1,0 +1,38 @@
+<button (click)="showMyContainer=!showMyContainer" class="btn btn-danger btn-sm">Click Me To Add Place</button>
+<div *ngIf="showMyContainer">
+    <div class="container">
+        <h2>
+            Add new place
+        </h2>
+        <div>
+            <p><input [(ngModel)]="Name" placeholder="enter the name" class="form-group rounded" />
+            </p>
+            <p><input [(ngModel)]="PinCode" placeholder="enter the pincode" class="form-group rounded" />
+            </p>
+            <p><input [(ngModel)]="State" placeholder="enter the state" class="form-group rounded" />
+    
+            <p>
+                <input [(ngModel)]="Description" placeholder="Enter the description" class="form-group rounded" />
+    
+            </p>
+            <p>
+                <select [(ngModel)]="Significance" class="rounded" style="width: auto;">
+                    <option>Historic</option>
+                    <option>Religious</option>
+                    <option>Leisure</option>
+                    <option>Hillstation</option>
+    
+    
+                </select>
+            </p>
+            <p>
+                <input [(ngModel)]="ImagePath" type="file" class="form-group rounded" />
+    
+            </p>
+            <p>
+                <button (click)="onAddNewPlace()" class="btn btn-sm btn-primary">Add New Place</button>
+            </p>
+    
+        </div>
+    </div>
+</div>

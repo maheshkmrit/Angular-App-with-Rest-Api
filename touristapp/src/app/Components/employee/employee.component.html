@@ -1,0 +1,17 @@
+
+<div>
+    <table border="1px"class="table table-hover w-auto" >
+        <thead class="thead-dark">
+        <tr style="border-radius: 5px;" >
+            <th>Employee Name</th>
+            <th>Employee Address</th>
+            <th>Employee Salary</th>
+        </tr>
+        </thead>
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.EmpName}}</td>
+            <td>{{emp.EmpAddress}}</td>
+            <td>{{emp.EmpSalary}}</td>
+        </tr>
+    </table>
+</div>
